@@ -1,0 +1,6 @@
+- Fazer scroll dinâmico (x).
+- Criar página de contato (x).
+- Criar sistema de contato (x).
+- Adicionar favicon (x).
+- Criar Painel (x).
+- Criar sistema que contabiliza acessos (x).

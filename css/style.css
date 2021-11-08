@@ -1,0 +1,551 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&family=Urbanist:wght@300;400;700&display=swap');
+
+:root{
+    --cor1: #5386E4;
+    --cor2: #C41E3D;
+    --cor3: #44CFCB;
+    --cor4: #3626A7;
+    --cor5: #191716;
+
+    --fonte-titulos: 'Bebas Neue', cursive;
+    --fonte-destaque: 'Press Start 2P', cursive;
+    --fonte-conteudo: 'Urbanist', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--fonte-titulos);
+}
+
+p, a{
+    font-family: var(--fonte-conteudo);
+}
+
+/*BOOT*/
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 2%;
+    margin: auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.flex-mode{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.destaque{
+    font-family: var(--fonte-destaque);
+}
+
+.fixed-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.mobile{
+    display: none;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    min-height: 700px;
+    padding: 5px 10px;
+}
+
+.divisoria{
+    background-color: bisque;
+    width: 100%;
+    height: 100px;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.bg{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.w33{
+    width: 33.3%;
+}
+
+.w50{
+    width: 50%;
+}
+
+.w100{
+    width: 100%;
+}
+
+.margin-top-40{
+    margin-top: 40px;
+}
+
+.box-single{
+    max-width: 280px;
+    min-height: 280px;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.btn{
+    background-color: var(--cor4);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    transition: 0.25s;
+}
+
+.btn.type-2{
+    background-color: transparent;
+    border: 1px solid var(--cor1);
+    color: black;
+}
+
+.btn.type-2:hover{
+    background-color: transparent;
+}
+
+.btn:hover{
+    background-color: var(--cor1);
+}
+
+.hide{
+    display: none;
+}
+
+.box-alert{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    color: white;
+    font-size: 32px;
+}
+
+.sucesso{
+    background-color: green;
+}
+
+.erro{
+    background-color: var(--cor2);
+}
+
+/*SITE*/
+.header__bg{
+    background-image: url("../images/bg.jpeg");
+    min-height: 700px;
+}
+
+.header__bg.limit-to-title{
+    height: 80px;
+    min-height: 80px;
+}
+
+.header__bg.limit-to-title{
+    background-image: url("../images/bg-contato.jpeg");
+    background-position: bottom;
+}
+
+.overlay.limit-to-title{
+    height: 80px;
+    min-height: 80px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header h1 a{
+    color: var(--cor1);
+    font-size: 60px;
+}
+
+.mobile i{
+    color: white;
+    font-size: 32px;
+    margin: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.mobile ul{
+    text-align: center;
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-500px);
+    width: 50%;
+    z-index: 1;
+    background-color: white;
+    height: 100%;
+}
+
+.mobile li{
+    margin: 20px 0;
+    display: block;
+}
+
+.mobile a{
+    padding: 10px 0;
+    display: block;
+    color: var(--cor5);
+    font-size: 25px;
+}
+
+.mobile .btn{
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav.desktop li{
+    display: inline-block;
+    margin: 5px;
+    margin-top: 18px;
+    font-size: 22px;
+}
+
+nav.desktop a{
+    color: var(--cor3);
+    transition: 0.25s;
+}
+
+nav.desktop .btn{
+    color: white;
+}
+
+nav.desktop a:hover{
+    font-size: 23px;
+}
+
+.header__conteudo{
+    position: relative;
+    top: 100px;
+    color: white;
+}
+
+.header__conteudo h2{
+    font-size: 48px;
+}
+
+.header__conteudo q{
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.header__conteudo p{
+    font-size: 22px;
+}
+
+main h1{
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+main h2{
+    font-size: 32px;
+    margin: 8px 0;
+}
+
+main p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+main q{
+    display: block;
+    margin: 5px 0;
+}
+
+.main__conteudo{
+    margin: 20px 0;
+}
+
+.box-criacao{
+    margin: auto;
+    max-width: 1280px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.criacao-do-site{
+    margin: 0;
+    background-image: url("../images/bg-landscape.jpeg");
+}
+
+.criacao-do-site .overlay{
+    margin: 0;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.criacao-single{
+    background-color: white;
+    transition: 0.25s;
+}
+
+.box-diferenciais{
+    margin: auto;
+    max-width: 900px;
+    width: 100%;
+    justify-content: center;
+}
+
+.box-single i{
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 72px;
+}
+
+.box-single p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.box-single h3{
+    text-align: center;
+    font-size: 22px;
+}
+
+.criacao-single:hover{
+    padding: 20px;
+    max-width: 290px;
+    height: 290px;
+    background-color: #44cfca6e;
+}
+
+.diferencial-single{
+    background-color: var(--cor1);
+    color: white;
+}
+
+main a.btn{
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 20px;
+    display: inline-block;
+}
+
+main a.btn:hover{
+    font-size: 22px;
+}
+
+.contato__form{
+    margin: 40px auto;
+}
+
+form input:not([type=submit]){
+    width: 100%;
+    height: 48px;
+    padding-left: 8px;
+    margin: 5px 0;
+}
+
+form input[type=submit]{
+    display: block;
+    border: 0;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: var(--cor1);
+    cursor: pointer;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.contato__telefone{
+    margin: 40px auto;
+}
+
+.bg__contato h1{
+    color: white;
+    font-size: 72px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bg__contato .overlay{
+    min-height: 300px;
+    height: 300px;
+}
+
+.bg__contato.bg{
+    background-position: bottom;
+}
+
+.bg__contato{
+    background-image: url("../images/bg-contato.jpeg");
+}
+
+.slider{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(25, 23, 22, 0.808);
+}
+
+.slider-wraper{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.slider-single{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.slider-single:nth-of-type(1){
+    background-image: url("../images/projeto-1.jpg");
+    left: 0;
+}
+
+.slider-single:nth-of-type(2){
+    background-image: url("../images/projeto-2.jpg");
+    left: 100%;
+}
+
+.slider-single:nth-of-type(3){
+    background-image: url("../images/projeto-3.jpg");
+    left: 200%;
+}
+
+.slider-single:nth-of-type(4){
+    background-image: url("../images/projeto-4.jpg");
+    left: 300%;
+}
+
+.slider-single:nth-of-type(5){
+    background-image: url("../images/projeto-5.jpg");
+    left: 400%;
+}
+
+.main__conteudo:last-of-type{
+    margin-bottom: 0;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: var(--cor4);
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .w50{
+        width: 100%;
+    }
+    .w33{
+        width: 100%;
+    }
+    img{
+        width: 100%;
+    }
+    div.slider-single{
+        background-size: 100% 100%;
+    }
+    .flex-mode{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    header h1 a{
+        font-size: 32px;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile ul{
+        display: block;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .slider{
+        width: 100%;
+        height: 800px;
+        background-color: rgba(25, 23, 22, 0.808);
+    }
+
+    .slider-single:nth-of-type(1){
+        background-image: url("../images/projeto-1-responsivo.jpg");
+        left: 0;
+    }
+    
+    .slider-single:nth-of-type(2){
+        background-image: url("../images/projeto-2-responsivo.jpg");
+        left: 100%;
+    }
+    
+    .slider-single:nth-of-type(3){
+        background-image: url("../images/projeto-3-responsivo.jpg");
+        left: 200%;
+    }
+    
+    .slider-single:nth-of-type(4){
+        background-image: url("../images/projeto-4-responsivo.jpg");
+        left: 300%;
+    }
+    
+    .slider-single:nth-of-type(5){
+        background-image: url("../images/projeto-5-responsivo.jpg");
+        left: 400%;
+    }
+}
